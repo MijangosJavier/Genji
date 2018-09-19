@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Genji</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body data-spy="scroll" class="bg-dark">
+<div id="container" >
+
+
+	<div id="navBarSection " style=" ">
+		<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark p-0 w-100 position-fixed" > 
+
+		  	<a class="navbar-brand p-0 m-0" href="#" >
+		  		<img id="IconPortrait" src="img/icon-portrait.png" class="p-0 m-0">Genji
+		  	</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+			    <div class="navbar-nav">
+			    	<a class="nav-item nav-link pl-2" href="#spaceSection">Showcase</a>
+			      	<a class="nav-item nav-link pl-2" href="#abilitiesSection">Abilities</a>
+			      	<a class="nav-item nav-link pl-2" href="#bioSection">Bio</a>
+			      	<a class="nav-item nav-link pl-2" href="#skinsSection">Skins</a>
+			    </div>
+			</div>
+		</nav>
+	</div>
+
+
+	<div id="bannerSection" class="container-fluid bg-light position-relative">
+		<div class="row">
+			<div class="col-sm-6 position-relative showOverflow d-flex align-items-center">
+				<img id="Portrait" src="img/Genji_portrait.png" class="m-5">
+			</div>
+			<div class="col-sm-6 d-flex align-items-center justify-content-center">
+				<blockquote class="blockquote">
+					<p>"I need healing"</p>
+					<footer class="blockquote-footer"><cite>Genji</cite></footer>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="showCaseVideo" class="fixed-top" >
+		<video muted="muted" preload="none" autoplay loop >
+			<source src="vid/genjiVid.webm" type="video/webm">
+		</video>
+	</div>
+
+
+	<div id="spaceSection" class="bg-transparent position-relative" style="height: calc(100vw / 2 ); width: 100%;">
+		<div class="row">
+			<div class="col-6 d-flex justify-content-center align-items-center">
+				<blockquote class="blockquote font-italic">
+					<p id="ShowcaseText" class="pr-4">Measure twice<br>cut once</p>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="abilitiesSection" class="bg-dark position-relative ">
+		<div id="accordion" class="accordion  pt-5">
+
+			<div class="card">
+			    <div class="card-header pt-0 pb-0" id="headingOne">
+			    	<img src="img/IconShurikenSm.png">
+			        <button class="btn" type="button">
+			          <h4 class="m-0">Shuriken</h4>
+			        </button>
+			    </div>
+			    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+			    <div>
+			      <div class="card-body row">
+			        <div class="col-xl-6">
+						<iframe  src="https://www.youtube.com/embed/RVtaERpoRag?rel=0&showinfo=0&controls=2&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div class="col-xl-6">
+						<p>Genji looses three deadly throwing stars in quick succession. Alternatively, he can throw three shuriken in a wider spread.</p>
+					</div>
+			      </div>
+			    </div>
+				</div>
+			</div>
+
+			<div class="card">
+			    <div class="card-header pt-0 pb-0" id="headingTwo">
+			    	<img src="img/IconSwiftStrike.png">
+			        <button class="btn collapsed" type="button">
+			          <h4 class="m-0">Swift Strike</h4>
+			        </button>
+			    </div>
+			    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+			    <div>
+			      <div class="card-body row">
+			      	<div class="col-md-6">
+						<iframe src="https://www.youtube.com/embed/ndyaZfj58qA?rel=0&showinfo=0&controls=2&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-6">
+						<p>Genji darts forward, slashing with his blade and passing through foes in his path. If Genji eliminates a target, he can instantly use this ability again.</p>
+					</div>
+			      </div>
+			    </div>
+				</div>
+			</div>
+
+			<div class="card">
+			    <div class="card-header pt-0 pb-0" id="headingThree">
+			    	<img src="img/IconDeflect.png">
+			        <button class="btn collapsed" type="button">
+			          <h4 class="m-0">Deflect</h4>
+			        </button>
+			    </div>
+			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+			    <div>
+			      <div class="card-body row">
+					<div class="col-md-6">
+						<iframe src="https://www.youtube.com/embed/luBg5d0a_BM?rel=0&showinfo=0&controls=2&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>	
+					<div class="col-md-6">
+						<p>With lightning-quick swipes of his blade, Genji reflects an oncoming projectile and sends it rebounding towards his opponent.</p>
+					</div>
+			      </div>
+			    </div>
+			    </div>
+			</div>
+
+			<div class="card">
+			    <div class="card-header pt-0 pb-0" id="headingFour">
+			    	<img src="img/IconDragonblade.png">
+			        <button class="btn collapsed" type="button">
+			          <h4 class="m-0">Dragonblade</h4>
+			        </button>
+			    </div>
+			    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+			    <div>
+			      <div class="card-body row">
+			        <div class="col-md-6">
+						<iframe src="https://www.youtube.com/embed/ADrxw94XHLg?rel=0&showinfo=0&controls=2&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-6">
+						<p>Genji brandishes his katana for a brief period of time. Until he sheathes his katana, Genji can deliver killing strikes to any targets within his reach.</p>
+					</div>	
+			      </div>
+			    </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="bioSection" class="bg-light position-relative d-flex align-items-center">
+		<div id="bioContent" class="container text-justify">
+			<p>
+			As the youngest son of the master of the Shimada ninja clan, Genji lived a life of luxury and privilege. He had little interest in the family's illegal businesses, and although he excelled at and enjoyed his ninja training, he spent most of his time pursuing a playboy lifestyle. Following the clan leader's untimely death, Genji's older brother, Hanzo, demanded that Genji take a more active role in their late father's empire. Genji refused, enraging Hanzo. The tension between the brothers built to a violent confrontation that left Genji on the verge of dying.
+
+			Genji was rescued by Overwatch and the intervention of Dr. Angela Ziegler. The global force saw Genji as a potential asset in its ongoing operations to combat the Shimada clan. As Genji's injuries left him clinging to life, Overwatch offered to rebuild his body in exchange for his help. Transformed into a living weapon, Genji single-mindedly set about the task of dismantling his family's criminal empire.
+
+			But as time passed, he was repulsed by the mechanical parts of his body and could not come to grips with what he had become. When his mission was complete, he abandoned Overwatch and wandered the world in search of meaning. He drifted for many years before crossing paths with the omnic monk Zenyatta. In time, Zenyatta became his mentor, and under the monk's tutelage, Genji reconciled his dual existence as both man and machine. He learned to accept that although he had a cyborg body, his human soul was intact, and he came to see his new form as a gift and a unique strength.
+			</p>
+		</div>
+		
+	</div>
+	<div id="skinsSection" class=" position-relative pt-5">
+		<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2500">
+		  <div class="carousel-inner">
+
+		    	<div class="carousel-item active">
+		      		<img class="d-block w-100" src="img/Genji_sparrow.png?auto=yes&bg=777&fg=555&text=Sparrow" alt="Sparrow">
+		      		<div class="carousel-content text-left">
+					    <p class="carousel-title pr-3">Sparrow</p>
+					    <p>Training armor</p>
+					</div>
+		    	</div>
+
+		    	<div class="carousel-item">
+		      		<img class="d-block w-100" src="img/Genji_classic.png?auto=yes&bg=666&fg=444&text=Classic" alt="Classic">
+		      		<div class="carousel-content text-left">
+					    <p class="carousel-title pr-3">Classic</p>
+					    <p>Overwatch armor</p>
+					</div>
+		    	</div>
+
+		    	<div class="carousel-item">
+		      		<img class="d-block w-100" src="img/Genji_carbonfiber.png?auto=yes&bg=555&fg=333&text=Carbonfiber" alt="Carbonfiber">
+		      		<div class="carousel-content text-left">
+					    <p class="carousel-title pr-3">Carbonfiber</p>
+					    <p>Upgraded armor</p>
+					</div>
+		    	</div>
+
+		    	<div class="carousel-item">
+		      		<img class="d-block w-100" src="img/Genji_oni.png?auto=yes&bg=555&fg=333&text=Oni (demon)" alt="Oni (demon)">
+		      		<div class="carousel-content text-left">
+					    <p class="carousel-title pr-3">Oni</p>
+					    <p>Talon armor</p>
+					</div>
+		    	</div>
+
+		  	</div>
+
+		  	<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			</a>
+			<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			</a>
+
+		</div>
+	</div>
+	<div id="footerSection" class="bg-dark position-relative">
+		<div class="row d-flex align-items-center pr-3 pl-3">
+			<div class="col">
+				<small class="text-muted text-white  d-flex justify-content-start">Powered by Bootstrap and JS</small>
+			</div>
+			<div class="col">
+				<p class="font-weight-bold text-muted d-flex d-flex justify-content-end">Javier Mijangos &copy 2018</p>
+			</div>
+		</div>
+	</div>
+
+
+
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="JS/events.js"></script>
+</html>
