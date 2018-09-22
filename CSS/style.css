@@ -10,6 +10,10 @@
 
 @media screen and (min-width: 1405px) {
 
+	.blockquote{
+		font-size: 5rem;
+	}
+
 	iframe{
 		/*width: 560px;
 		height: 315px;*/
@@ -21,14 +25,31 @@
 		width: 100%;
 	}
 
+	div.card-body{
+		font-size: 3em
+	}
+
 	#bioSection{
 		font-size: 1.8vw;
+	}
+
+	span{
+		display: initial;
+	}
+
+	#skinsSection{
+		height: calc(100vh + 50px);
+		width: 100%
 	}
 
 }
 
 /* If the screen size is 601px wide or more */
 @media screen and (min-width: 601px) and (max-width: 1404px) {
+
+	.blockquote{
+		font-size: 4.5rem;
+	}
 
 	iframe{
 		width: 560px;
@@ -39,13 +60,30 @@
 		width: calc(100vw*2);
 	}
 
+	div.card-body{
+		/*font-size: 3vw;*/
+		font-size: 1.5em
+	}
+
 	#bioSection{
-		font-size: 2.3vw;
+		font-size: 2.6vw;
+	}
+
+	span{
+		display: none;
+	}
+
+	#skinsSection{
+		height: calc(100vh + 50px);
+		width: 100%
 	}
 }
 
 /* If the screen size is 600px wide or less */
 @media screen and (max-width: 600px) {
+	.blockquote{
+		font-size: 4rem;
+	}
 
 	iframe{
 		width: 390px;
@@ -56,8 +94,31 @@
 			width: calc(100vw*2);
 	}
 
+	div.card-body{
+		font-size: 1.5em
+	}
+
 	#bioSection{
-		font-size: 2.8vw;
+		font-size: 2.7vh;
+	}
+
+	span{
+		display: none;
+	}
+
+	#skinsSection{
+		padding: 0!important;
+		height: auto;
+		width: 100%
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+
+	iframe{
+		width: 300px;
+		height: 167px;
 	}
 
 }
@@ -70,7 +131,7 @@
 
 nav{
 	z-index: 2;
-	font-size: 20px;
+	font-size: 1.5em;
 }
 
 #showCaseVideo{
@@ -87,9 +148,14 @@ h1, .blockquote, .carousel-title{
 	font-family: "OWItalicFont";
 }
 
-#bannerSection, #abilitiesSection, #bioSection, #skinsSection{
+#bannerSection, #abilitiesSection, #bioSection{
 	height: calc(100vh + 50px);
 	width: 100%
+}
+
+#spaceSection{
+	height: calc(100vw / 2 ); 
+	width: 100%;
 }
 
 #Portrait{
@@ -101,7 +167,6 @@ h1, .blockquote, .carousel-title{
 	width: 100%;
 }
 
-
 .showOverflow{
 	overflow: initial;
 }
@@ -110,17 +175,10 @@ h1, .blockquote, .carousel-title{
 	height: inherit;
 }
 
-.blockquote{
-	font-size: 6vw;
-}
-
 #ShowcaseText{
+	font-size: 6vw;
 	color: white;
 	text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-div.card-body{
-	font-size: 3vw;
 }
 
 div.card-body div{
@@ -143,7 +201,7 @@ div.card-header button:focus{
 
 #bioSection{
 	background-image: url("../img/Dragons1.jpg");
-
+	background-color: black;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
